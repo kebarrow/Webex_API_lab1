@@ -1,0 +1,6 @@
+urllib3
+uuid
+schedule
+requests
+PyJWT
+qrcode
