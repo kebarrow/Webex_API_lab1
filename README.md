@@ -6,23 +6,23 @@ https://docs.docker.com/get-docker/
 # Run environment
 To get a live environment please run the following command from the main directory:
 
-docker build -t webex-api . 
+    docker build -t webex-api . 
 
 the created image will be tagged as webex-api
 
 If you open your terminal and enter 
 
-docker images
+    docker images
 
 you be able to see the create docker conotainer image  
 
 To start the notebook server execute this command:
 
-docker run -it --rm --name apilab -p 8888:8888 webex-api
+    docker run -it --rm --name apilab -p 8888:8888 webex-api
 
 If you don't want to build your own image you can also just pull and execute the image I prepared from the following link:
 
-docker run -it --rm --name jupyter -p 8888:8888 omerilyas/api-lab
+    docker run -it --rm --name jupyter -p 8888:8888 omerilyas/api-lab
 
 When executed for the 1st time Docker will pull the image from hub.docker.com and then start a container based off this image.
 
