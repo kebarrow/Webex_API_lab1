@@ -26,7 +26,7 @@ If you don't want to build your own image you can also just pull and execute the
 
 When executed for the 1st time Docker will pull the image from hub.docker.com and then start a container based off this image.
 
-The options used in both commands:
+The options used in  commands are:
 
     -it : requests an interactive console
 
@@ -37,5 +37,10 @@ The options used in both commands:
     -p 8888:8888 : maps port 8888 of the local host to port 8888 of the container; required to access the notebook server. If port 8888 on your local system is not available then use a different port; -p 8889:8888 for example maps local port 8889 to port 8888 of the container.
 
     omerilyas/api-lab : is the name of the image to run
+
+Once your image is running, please open by clicking or copy/pasing the follwoing url in your web browser
+
+    http://127.0.0.1:8888/lab?token=XXXXXXXX
+    NOTE: The above URL is for refernce only 
 
 
